@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lucas Díaz | Técnico en Informática</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="fade-in">
+<img src="foto-lucas.jpg" alt="Foto de Lucas Díaz" class="profile-pic" id="profilePic">
+
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImg">
+</div>
+  <h1>Lucas David Diaz</h1>
+  <p>Técnico en Informática | Soporte IT</p>
+  <a href="Curriculum_Vitae_Lucas_Diaz.pdf" class="btn" download>Descargar CV</a>
+</header>
+
+<section class="fade-in">
+  <h2>Sobre mí</h2>
+  <p>
+    Técnico en informática con experiencia en soporte técnico,
+    mantenimiento de equipos y entornos industriales.
+    Experiencia laboral como operario de fábrica,
+    con adaptación a procesos empresariales y trabajo en equipo.
+    Interesado en crecer profesionalmente en el área IT.
+  </p>
+</section>
+
+<section class="fade-in">
+  <h2>Habilidades Técnicas</h2>
+  <div class="skills">
+    <span>Soporte Técnico</span>
+    <span>Mantenimiento de PC</span>
+    <span>Instalación de Windows</span>
+    <span>Redes LAN / TCP-IP</span>
+    <span>Resolución de Incidencias</span>
+    <span>Soporte Remoto</span>
+    <span>Hardware</span>
+    <span>Configuración de Equipos</span>
+
+  </div>
+</section>
+
+<section class="fade-in">
+  <h2>Tecnologías y Herramientas</h2>
+  <div class="skills">
+    <span>Windows / Windows Server </span>
+    <span>Linux Ubuntu / Ubuntu Server</span>
+    <span>Office</span>
+    <span>BIOS / UEFI</span>
+    <span>Drivers</span>
+    <span>TCP/IP</span>
+  </div>
+</section>
+
+<section class="fade-in">
+  <h2>Experiencia Profesional</h2>
+
+  <div class="experience-card">
+    <h3>Operario de Planta Industrial – [Ingenio Verde SRL]</h3>
+    <p class="date">May 2025 - Nov 2025</p>
+    <ul>
+      <li>Operación de maquinaria industrial.</li>
+      <li>Carga y descarga de materiales.</li>
+      <li>Clasificación y organización de productos.</li>
+      <li>Cumplimiento de normas de seguridad e higiene laboral.</li>
+    </ul>
+  </div>
+
+    <div class="experience-card">
+    <h3>Pasante Fundación Mirgor</h3>
+    <p class="date">Ago 2024 - Nov 2024</p>
+    <ul>
+      <li>Ensamblaje y verificación de equipos informáticos.</li>
+      <li>Detección y diagnóstico de fallas de hardware.</li>
+      <li>Clasificación y control de calidad de componentes.</li>
+      <li>Cumplimiento de tiempos y estándares industriales.</li>
+    </ul>
+  </div>
+
+<div class="experience-card">
+  <h3>Soporte Técnico Independiente</h3>
+  <p class="date">2023 - Actualidad</p>
+  <ul>
+    <li>Atención directa a usuarios para resolución de incidencias.</li>
+    <li>Diagnóstico de fallas de hardware y software.</li>
+    <li>Asesoramiento técnico y recomendaciones de mejora.</li>
+    <li>Gestión integral del servicio desde el diagnóstico hasta la solución.</li>
+  </ul>
+</div>
+</section>
+
+<section class="fade-in">
+  <h2>Proyectos Técnicos</h2>
+
+  <div class="experience-card">
+    <h3>Optimización de Equipos</h3>
+    <ul>
+      <li>Formateo e instalación limpia de Windows 10/11.</li>
+      <li>Eliminación de software innecesario.</li>
+      <li>Actualización de drivers y configuración del sistema.</li>
+      <li>Mejora significativa en tiempos de arranque.</li>
+    </ul>
+  </div>
+
+  <div class="experience-card">
+    <h3>Diagnóstico y Reparación de Hardware</h3>
+    <ul>
+      <li>Detección de fallas en discos y memorias RAM.</li>
+      <li>Reemplazo de componentes defectuosos.</li>
+      <li>Limpieza interna y mantenimiento preventivo.</li>
+    </ul>
+  </div>
+
+  <div class="experience-card">
+    <h3>Asistencia a Usuarios</h3>
+    <ul>
+      <li>Resolución de problemas de red básica.</li>
+      <li>Configuración de impresoras y periféricos.</li>
+      <li>Soporte remoto y presencial.</li>
+    </ul>
+  </div>
+
+</section>
+
+<section class="fade-in">
+  <h2>Contacto</h2>
+  <div class="contact-buttons">
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=lucasdiaz9845@gmail.com" target="_blank" class="contact-btn">📧 Email</a>
+    <a href="https://www.linkedin.com/in/lucasdiaz44/" target="_blank" class="contact-btn">💼 LinkedIn</a>
+  </div>
+</section>
+
+
+
+<footer>
+  © 2026 Lucas Díaz - Portafolio Profesional
+</footer>
+
+<script>
+  const modal = document.getElementById("imageModal");
+  const img = document.getElementById("profilePic");
+  const modalImg = document.getElementById("modalImg");
+  const closeBtn = document.querySelector(".close");
+
+  img.onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  }
+
+  closeBtn.onclick = function() {
+    modal.style.display = "none";
+  }
+
+  modal.onclick = function(e) {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
