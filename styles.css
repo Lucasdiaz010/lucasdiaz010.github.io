@@ -95,7 +95,7 @@ footer {
   margin-top: 40px;
 }
 
-/* Animación suave */
+
 .fade-in {
   animation: fadeIn 1.2s ease-in;
 }
@@ -111,7 +111,7 @@ footer {
   }
 }
 
-/* Responsive */
+
 @media (max-width: 600px) {
   h1 {
     font-size: 30px;
@@ -122,7 +122,6 @@ footer {
   }
 }
 
-/* ===== EXPERIENCIA FIX ===== */
 
 .experience-card {
   background: #181818;
@@ -171,7 +170,6 @@ footer {
   transform: scale(1.05);
 }
 
-/* ===== MODAL IMAGEN ===== */
 
 .modal {
   display: none;
